@@ -12,3 +12,10 @@ Define model classes that represent the data returned by the API. These are not 
 
 ## Controller Class:
 Create controller classes to handle incoming requests and delegate the operations to the service class.
+
+# Explanation:
+RestTemplate Bean: The AppConfig class defines a RestTemplate bean that can be autowired into other classes.
+Service Class: The ApiService class uses RestTemplate to call the external API endpoints for CRUD operations.
+Model Class: The DataModel class represents the data structure returned by the API.
+Controller Class: The DataController class handles HTTP requests and delegates the operations to the ApiService.
+This approach allows your Spring Boot application to interact with a database through an external API, avoiding the need for direct database access and entity classes.
